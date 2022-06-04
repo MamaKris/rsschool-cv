@@ -4,7 +4,7 @@
 
 + Discord : Kristina#7635
 + E-mail: krisrina.k.hatalskaya@gmail.com
-+ Tel: +375293153577
+
 
 ##  About myself:
 I am going to become a developer. I am glad to be able to study at ###RSSchool. 
