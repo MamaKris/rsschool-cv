@@ -1,0 +1,135 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2c2b2b;
+    min-height: 100vh;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth; 
+  }
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .list{
+    list-style-type: none;
+   
+   }
+   .list li:before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    background-image: url(assets/w64h641389807750appointmentnewicon2.png);
+    background-repeat: no-repeat;
+    top: 5px;
+    background-size: contain;
+ }
+
+  
+    .header{
+    background: rgb(153, 65, 153);
+   
+  }
+  .avatar{
+    width: 240px;
+    border-radius: 20%;
+   margin-left: 100px;
+  
+  }
+  .name{
+    text-align: center;
+    font-size: 50px;
+    color:#160a12  ;
+  }
+  .student{
+    font-style: italic;
+    text-align: right;
+  }
+
+ .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    
+   }
+   .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #160a12 ;
+  }
+  .nav-link:hover{
+    color: ivory;
+  }
+
+
+  .main{
+    background:url(assets/white-brick-wall-texture-design-empty-white-brick-background-for-presentations_1962-1075.webp);
+  
+  }
+  .main-container {
+   display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+   }
+   .section {
+  width: 50%;
+  }
+  .contacts{
+    list-style-type: circle;
+  }
+  
+   .section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #160a12;
+  }
+  .section-item {
+    position: relative;
+    padding-left: 30px;
+  }
+  .progects{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+
+  }
+
+  .footer{
+   
+    background: rgb(153, 65, 153);
+    
+  }
+  .footer p{
+      font-size: 20px;
+     float: left;
+     margin-right: 50px;
+    
+  }
+ 
+  .footer a{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+  }
+ 
+   .logo{
+    float: right;
+    margin-right: 50px;
+    padding-top: 15px;
+  }
+  
