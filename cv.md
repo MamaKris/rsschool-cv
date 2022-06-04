@@ -7,7 +7,7 @@
 
 
 ##  About myself:
-I am going to become a developer. I am glad to be able to study at ###RSSchool. 
+I am going to become a developer. I am glad to be able to study at RSSchool. 
 
 ## Code example:
 
