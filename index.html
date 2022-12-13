@@ -5,17 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
-  <div class="container">
+  
   <header class="header">
+    <div class="container header__container">
       <div class="logo">
-          <a href="https://rs.school/js/" class="logo-link"><img src="#" alt="rss-logo" class="logo-img"></a>
+          <a href="https://rs.school/js/" class="logo-link"><img src="./assets/img/rss-logo.svg" alt="rss-logo" class="logo-img"></a>
       </div>
     <nav class="nav">
-      <ul class="nav-menu">
+      <ul class="nav-menu list-reset">
         <li class="nav-menu__item"><a href="#" class="nav-menu__link">Contacts</a></li>
         <li class="nav-menu__item"><a href="#" class="nav-menu__link">Summary</a></li>
         <li class="nav-menu__item"><a href="#" class="nav-menu__link">Skills and Proficiency</a></li>
@@ -26,11 +28,14 @@
         <li class="nav-menu__item"><a href="#" class="nav-menu__link">Languages</a></li>
       </ul>
     </nav>
+    </div>
   </header>
   <main class="main">
+   
     <section class="hero section">
+     
       <div class="hero-avatar">
-        <img src="#" alt="avatar" class="hero-avatar__img">
+        <img src="./assets/img/avatar.jpg" alt="avatar" class="hero-avatar__img">
       </div>
       <div class="hero-name ">
         <h1 class="hero-name__title">Kristina Hatalskaya</h1>
@@ -38,32 +43,35 @@
 
       </div>
     </section>
+    <div class="container">
+    <div class="grig-container">
+     
     <section class="section">
       <h2 class="section-title">Contacts</h2>
-      <ul class="contacts-list lest-reset">
-        <li class="contacts-list__item">Gomel,Belarus</li>
-        <li class="contacts-list__item">Discord : Kristina#7635</li>
-        <li class="contacts-list__item">E-mail: krishatalskaya@gmail.com</li>
-        <li class="contacts-list__item">GitHub: MamaKris</li>
-        <li class="contacts-list__item">Telegram:@kri_s_tick</li>
+      <ul class="contacts-list list-reset">
+        
+        <li class="contacts-list__item list__item"><span> Discord :</span> Kristina#7635</li>
+        <li class="contacts-list__item list__item"><span>E-mail:</span> krishatalskaya@gmail.com</li>
+        <li class="contacts-list__item list__item"><span>GitHub:</span> MamaKris</li>
+        <li class="contacts-list__item list__item"><span>Telegram:</span>@kri_s_tick</li>
       </ul>
 
     </section>
     <section class="section">
       <h2 class="section-title">Summary</h2>
-      <p class="summary-text">
+      <p class="summary-text ">
       For the last time I have been studying front-end development soo hard.I believe, that my ability to learn
       and to gain new skills will lead me through this path of becoming a proficient Frontend Developer
       </p>
     </section>
     <section class="section">
       <h2 class="section-title">Skills and Proficiency</h2>
-      <ul class="skills-list lest-reset">
-        <li class="skilss-list__item">HTML5, CSS3</li>
-        <li class="skilss-list__item">JavaScript Basics</li>
-        <li class="skilss-list__item">Git, GitHub</li>
-        <li class="skilss-list__item">Jira,TestRail</li>
-        <li class="skilss-list__item">Figma</li>
+      <ul class="skills-list list-reset">
+        <li class="skilss-list__item list__item">HTML5, CSS3</li>
+        <li class="skilss-list__item list__item">JavaScript Basics</li>
+        <li class="skilss-list__item list__item">Git, GitHub</li>
+        <li class="skilss-list__item list__item">Jira,TestRail</li>
+        <li class="skilss-list__item list__item">Figma</li>
      </ul>
 
     </section>
@@ -77,14 +85,14 @@
     <section class="section">
       <h2 class="section-title">Projects</h2>
       <ul class="projects-list list-reset">
-        <li class="projects-list__item">
+        <li class="projects-list__item list__item">
           <a href="https://rolling-scopes-school.github.io/mamakris-JSFE2022Q1/Shelter/" class="projects-list__link">Shelter</a></li>
-        <li class="projects-list__item">
+        <li class="projects-list__item list__item">
           <a href="https://rolling-scopes-school.github.io/mamakris-JSFEPRESCHOOL/rsschool-portfolio/"
             class="projects-list__link">Portfolio</a></li>
-        <li class="projects-list__item">
+        <li class="projects-list__item list__item">
           <a href="https://mamakris.github.io/melody/" class="projects-list__link">Melody</a></li>
-        <li class="projects-list__item">
+        <li class="projects-list__item list__item">
           <a href="https://mamakris.github.io/cars-hw/" class="projects-list__link">Cars</a></li>
 
       </ul>
@@ -96,32 +104,38 @@
     <section class="section">
       <h2 class="section-title">Courses</h2>
       <ul class="curses-list list-reset">
-        <li class="curses-list__item list-item"> The Rolling Scopes School: JavaScript/Front-end. Stage 0</li>
-        <li class="curses-list__item list-item">Snooop QA School: Junior QA</li>
+        <li class="curses-list__item list__item"> <span> The Rolling Scopes School: </span>JavaScript/Front-end. Stage 0</li>
+        <li class="curses-list__item list__item"> <span> Snooop QA School: </span>Junior QA</li>
        
       </ul>
     </section>
     <section class="section">
       <h2 class="section-title">Languages</h2>
     <ul class="lenguages-list list-reset ">
-      <li class="list-item">English - B1 in process</li>
-      <li class="list-item">latviski - A1</li>
-      <li class="list-item">Russian - native speaker</li>
+      <li class="list__item"> <span> English -</span> B1 in process</li>
+      <li class="list__item"> <span>latviski -</span> A1</li>
+      <li class="list__item"> <span>Russian - </span>native speaker</li>
     </ul>
 
     </section>
+    </div>
+    </div>
   </main>
   <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
     <div class="footer-left">
       <span class="year">2022</span>
-      <a href="https://github.com/MamaKris" class="github-link">MamaKris</a>
+      <a href="https://github.com/MamaKris" class="github-link">Kristina Hatalskaya</a>
     </div>
     <div class="footer-right">
       <div class="logo">
-        <a href="https://rs.school/js/" class="logo-link"><img src="#" alt="rss-logo" class="logo-img"></a>
+        <a href="https://rs.school/js/" class="logo-link"><img src="./assets/img/rss-logo.svg" alt="rss-logo" class="logo-img"></a>
       </div>
     </div>
+    </div>
+    </div>
   </footer>
-  </div>
+ 
 </body>
 </html>
