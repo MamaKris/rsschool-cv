@@ -105,6 +105,10 @@ body {
   
   
 }
+.avatar-wraper{
+  display: flex;
+  align-items:center;
+}
 
 .hero-avatar{
   width: 250px;
@@ -165,10 +169,11 @@ body {
   width: 50%;
   background-color: currentColor;
 }
-.grig-container{
+.section-container{
     margin: 70px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
    
     
    
@@ -281,6 +286,7 @@ body {
   
 }
 .university{
+  display: flex;
   color: var(--accent-color);
   font-size: 20px;
   text-align: center;
@@ -309,3 +315,81 @@ font-size: 15px;
 .footer-right{
   padding: 10px;
 }
+@media(max-width:960px) {
+  .nav-menu{
+    display: none;
+  }
+  .hero{
+      flex-direction: column;
+      top: -2px;
+    }
+  .hero-avatar {
+   
+    left: 30%;
+    margin-top: 12%;
+    
+    
+    
+        }
+     .avatar-fon {
+  left: 33%;
+  bottom: 38%;
+     
+  
+     }
+ .code-example {
+  margin-left: 150px;
+         
+  }
+       
+  }
+  @media(max-width:768px){
+  .hero{
+    
+    left: 0;
+    }
+  .section-container{
+  margin: 20px auto;
+  grid-template-columns: repeat(1, 1fr);
+  }
+  .section{
+   margin: 0 auto;
+ 
+  }
+  
+  .summary-text{
+  width: 400px;
+  }
+  .code-example {
+  
+  margin-left: 10px;
+  
+    }
+  }
+ @media(max-width:320px){
+    
+.hero-avatar {
+    left: 0px;
+    
+  }
+.section-container{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+    
+  .avatar-fon{
+  left: 10%;
+  bottom: 48%;
+  }
+  .summary-text {
+    width: 200px;
+  }
+  .footer-container{
+   flex-direction: column-reverse;
+   align-items:center;
+  }
+ .footer-right {
+    padding: 0px;
+  }
+ }
