@@ -86,6 +86,7 @@ body {
   width: 80px;
   height: auto;
 
+
 }
 
 .nav-menu {
@@ -93,18 +94,64 @@ body {
   justify-content: flex-end;
   gap: 30px;
 }
-.burger-menu{
-  display: none;
-}
+
+.burger-btn {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 50px;
+      height: 50px;
+      display: none;
+      background-color: transparent;
+      border: none;
+      z-index: 30;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+.burger-btn_active{
+  transform: rotate(-90deg);
+  position: fixed;
+  left: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 30;
+    }
 .burger-line {
   display: block;
   width: 30px;
   border: 1px solid var(--accent-color);
-  margin: 5px 0;
+  margin: 7px 0;
+}
+.burger-menu_list{
+ 
+  padding-top: 70px;
+  position: fixed;
+  left: 0px;
+  top: 0;
+  z-index:20;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color:var(--dark-color);
+  overflow-y: auto;
+   left: -100%; 
+  
+}
+.burger-menu_list-active{
+  left: 0;
+}
+.burger__item{
+  color: var(--accent-color);
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.burger__item:hover{
+text-decoration: underline;
+
 }
 
-.nav-menu__link,
-.burger__item {
+.nav-menu__link{
   font-size: 18px;
   color: var(--dark-color);
 }
@@ -113,12 +160,7 @@ body {
   text-decoration: underline;
   color: var(--accent-color);
 }
-.burger-btn {
-display: none;
 
-
-
-}
 
 .hero {
   position: relative;
@@ -139,7 +181,7 @@ display: none;
   width: 250px;
   border-radius: 20px;
   position: relative;
-  z-index: 10;
+  z-index: 9;
 
 
 }
@@ -369,21 +411,18 @@ display: none;
 }
 
 @media(max-width:960px) {
+  .logo{
+   display: none;
+  }
+  
   .nav-menu {
     display: none;
   }
+    .burger-btn{
+      display: block;
+    }
 
-  .burger-btn{
-    margin: 10px ;
-        width: 30px;
-        height: 30px;
-        display: block;
-        background-color: transparent;
-        border: none;
-        z-index: 12;
-        transition: all 0.5s;
-        cursor: pointer;
-  }
+
     .burger-btn-active {
       transform: rotate(-90deg);
       position: fixed;
